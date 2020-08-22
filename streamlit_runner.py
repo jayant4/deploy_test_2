@@ -22,7 +22,7 @@ for basename in os.listdir(folder):
         fnames.append(fname)
 
 # Make a UI to run different files.
-only_names=[i[i.index("demo")+5:] for i in fnames]
+only_names=[i[i.index("deploy_test_2")+5:] for i in fnames]
 fname_to_run = st.sidebar.selectbox('Select an app', fnames)
 
 # Create module from filepath and put in sys.modules, so Streamlit knows
